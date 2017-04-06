@@ -4,6 +4,7 @@ package comWilliamHill;
 import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,10 +18,10 @@ public class HillsHook {
 
     @Before
     public WebDriver setup(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\ZLATAN\\ChromeDriver.exe");
-        driver = new ChromeDriver();
-        //System.setProperty("webdriver.gecko.driver","C:\\Users\\User\\Documents\\ZLATAN\\geckodriver.exe");
-        //driver = new FirefoxDriver();
+       // System.setProperty("webdriver.chrome.driver", "C:\\Users\\User\\Documents\\ZLATAN\\ChromeDriver.exe");
+       // driver = new ChromeDriver();
+        System.setProperty("webdriver.gecko.driver","C:\\Users\\User\\Documents\\ZLATAN\\geckodriver.exe");
+        driver = new FirefoxDriver();
         driver.manage().window().maximize();
        // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         return driver;
