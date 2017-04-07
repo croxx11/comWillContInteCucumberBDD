@@ -19,7 +19,7 @@ public class HiilsHomePage {
 
               }
 
-              @FindBy(how = How.CSS,using = ".logIn>a")
+              @FindBy(how = How.CSS,using = ".login>a")
               public static WebElement Log;
 
 
