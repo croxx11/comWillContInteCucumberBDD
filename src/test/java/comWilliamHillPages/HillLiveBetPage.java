@@ -18,7 +18,11 @@ public class HillLiveBetPage {
                     this.driver = driver;
                     PageFactory.initElements(driver,this);
                 }
+<<<<<<< Updated upstream
                 @FindBy(how = How.CLASS_NAME,using = "inPlayLinks")
+=======
+                @FindBy(how = How.ID,using = "10910039_mkt_namespace")
+>>>>>>> Stashed changes
                 public static WebElement Live;
                 @FindBy(how = How.XPATH,using = "//*[@id='joinNowBtnHolder\']/a/span")
                 public static WebElement Join;
