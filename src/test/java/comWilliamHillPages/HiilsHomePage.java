@@ -19,7 +19,7 @@ public class HiilsHomePage {
 
               }
 
-              @FindBy(how = How.CSS,using = ".login>a")
+              @FindBy(how = How.XPATH,using = "/html/body/div[3]/div[1]/div[2]/a")
               public static WebElement Log;
 
 

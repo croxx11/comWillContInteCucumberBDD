@@ -20,10 +20,13 @@ public class HillLiveBetPage {
                 }
                 @FindBy(how = How.CLASS_NAME,using = "inPlayLinks")
                 public static WebElement Live;
+                @FindBy(how = How.XPATH,using = "//*[@id='joinNowBtnHolder\']/a/span")
+                public static WebElement Join;
 
 
                 public void CheckCommentary(){
                     Live.click();
+                    Join.click();
 
                 }
 
